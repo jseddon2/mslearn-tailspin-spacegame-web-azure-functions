@@ -86,7 +86,7 @@ stages:
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game - Web'
               appName: '$(WebAppName)'
-              appType: webAppLinux
+              #appType: webAppLinux
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/Tailspin.SpaceGame.Web.zip'
           - task: AzureFunctionApp@1
             displayName: 'Azure Function Deploy: leaderboard'
